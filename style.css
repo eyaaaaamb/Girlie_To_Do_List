@@ -1,0 +1,124 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8bbd0, #ffe0e9); 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container {
+    background: #fff;
+    border: 3px solid #ff80ab; 
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff4081; 
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 2px #ff80ab;
+    letter-spacing: 2px;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 12px;
+    border: 2px solid #ff80ab;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #fff5f8;
+    color: #333;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff80ab, #ff4081); /* Gradient button */
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.4);
+}
+
+
+ul#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 250px; 
+    overflow-y: auto; 
+    border-top: 2px solid #ff80ab;
+    padding-top: 10px;
+}
+
+ul#taskList li {
+    background: linear-gradient(135deg, #ff80ab, #ff4081); /* Gradient for tasks */
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer {
+    margin-top: 20px;
+}
+
+footer button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ff80ab, #ff4081); 
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+footer button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.4);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    form input[type="text"] {
+        width: calc(100% - 100px);
+    }
+}
